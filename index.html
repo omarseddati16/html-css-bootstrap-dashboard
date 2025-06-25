@@ -14,9 +14,9 @@
 <body>
   <!-- header-->
   <header>
-    <nav class="navbar navbar-expand-lg bg-secondary-subtle">
+    <nav class="navbar navbar-expand-lg bg-dark-subtle">
       <div class="container-fluid">
-        <nav class="navbar bg-secondary-subtle">
+        <nav class="navbar bg-dark-subtle">
           <div class="container">
             <a class="navbar-brand" href="#">
               <img src="css/img/duck.png" alt="Bootstrap" width="50" height="50">
@@ -31,32 +31,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link active" aria-current="page" href="#">Anagraica Utenti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link active" aria-current="page" href="#">Storico prestiti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">help</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">Cerca</button>
           </form>
         </div>
       </div>
@@ -76,17 +65,17 @@
           <table class="table mt-4">
             <thead>
               <tr>
-                <th scope="col col-md-3">Titolo</th>
-                <th scope="col-md-3">data prestito</th>
-                <th scope="col col-md-3">Stato</th>
-                <th scope="col col-md-3">Azioni</th>
+                <th scope="col">Titolo</th>
+                <th class="d-none d-sm-table-cell" scope="col">Data prestito</th>
+                <th scope="col">Stato</th>
+                <th scope="col">Azioni</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>I pilastri della terra</td>
+                <td class="d-none d-sm-table-cell">-</td>
                 <td><span class="badge rounded-pill text-bg-success mb-3">Disponibile</span></td>
-                <td></td>
                 <td>
                   <div class="d-flex">
                     <a class="btn btn-secondary" href="#"><i class="fa-solid fa-pencil"></i></a>
@@ -96,6 +85,7 @@
               </tr>
               <tr>
                 <td>I promessi sposi</td>
+                <td class="d-none d-sm-table-cell">-</td>
                 <td><span class="badge rounded-pill text-bg-success mb-3">Disponibile</span></td>
                 <td>
                   <div class="d-flex">
@@ -106,6 +96,7 @@
               </tr>
               <tr>
                 <td>Il signore degli anelli</td>
+                <td class="d-none d-sm-table-cell">18/10/2023</td>
                 <td><span class="badge rounded-pill text-bg-warning text-white mb-3">In prestito</span></td>
                 <td>
                   <div class="d-flex">
@@ -116,6 +107,7 @@
               </tr>
               <tr>
                 <td>Harry Potter e la pietra filosofale</td>
+                <td class="d-none d-sm-table-cell">-</td>
                 <td><span class="badge rounded-pill text-bg-success mb-3">Disponibile</span></td>
                 <td>
                   <div class="d-flex">
@@ -126,6 +118,7 @@
               </tr>
               <tr>
                 <td>Il codice Da Vinci</td>
+                <td class="d-none d-sm-table-cell">-</td>
                 <td><span class="badge rounded-pill text-bg-danger mb-3">Non disponibile</span></td>
                 <td>
                   <div class="d-flex">
@@ -136,6 +129,7 @@
               </tr>
               <tr>
                 <td>Shining</td>
+                <td class="d-none d-sm-table-cell">-</td>
                 <td><span class="badge rounded-pill text-bg-success mb-3">Disponibile</span></td>
                 <td>
                   <div class="d-flex">
@@ -146,6 +140,7 @@
               </tr>
               <tr>
                 <td>La divina commedia</td>
+                <td class="d-none d-sm-table-cell">21/09/2023</td>
                 <td><span class="badge rounded-pill text-bg-warning text-white mb-3">In prestito</span></td>
                 <td>
                   <div class="d-flex">
@@ -156,6 +151,7 @@
               </tr>
               <tr>
                 <td>Il trono di spade</td>
+                <td class="d-none d-sm-table-cell">-</td>
                 <td><span class="badge rounded-pill text-bg-success mb-3">Disponibile</span></td>
                 <td>
                   <div class="d-flex">
@@ -166,6 +162,7 @@
               </tr>
               <tr>
                 <td>Il mondo di Sofia</td>
+                <td class="d-none d-sm-table-cell">-</td>
                 <td><span class="badge rounded-pill text-bg-danger mb-3">Non disponibile</span></td>
                 <td>
                   <div class="d-flex">
@@ -176,6 +173,7 @@
               </tr>
               <tr>
                 <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                <td class="d-none d-sm-table-cell">25/09/2023</td>
                 <td><span class="badge rounded-pill text-bg-warning text-white mb-3">In prestito</span></td>
                 <td>
                   <div class="d-flex">
@@ -186,6 +184,7 @@
               </tr>
               <tr>
                 <td>Il piccolo principe</td>
+                <td class="d-none d-sm-table-cell">-</td>
                 <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
                 <td>
                   <div class="d-flex">
@@ -196,6 +195,9 @@
               </tr>
               <tr>
                 <td>La storia infinita</td>
+                <div>
+                  <td class="d-none d-sm-table-cell">-</td>
+                </div>
                 <td><span class="badge rounded-pill text-bg-success mb-3">Disponibile</span></td>
                 <td>
                   <div class="d-flex">
