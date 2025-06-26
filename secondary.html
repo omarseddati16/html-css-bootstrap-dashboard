@@ -57,15 +57,34 @@
         <div class="row">
           <div class="col-6">
             <div class="mb-3">
-              <label for="name">Nome Autore</label>
-              <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore"
-                aria-label="First name">
+              <label for="nome" class="col-form-label col-form-label-lg">Nome Autore</label>
+              <input type="text" class="form-control form-control-lg" id="nome"
+                placeholder="Inserisci il nome dell'autore">
             </div>
           </div>
           <div class="col-6">
             <div class="mb-3">
-              <label for="lastname">Cognome Autore</label>
-              <input type="text" class="form-control" placeholder="Inseriesci il cognome" aria-label="Last name">
+              <label for="cognome" class="col-form-label col-form-label-lg">Cognome Autore</label>
+              <input type="text" class="form-control form-control-lg" id="cognome" placeholder="Inserisci il cognome">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="titolo" class="col-form-label col-form-label-lg">Titolo</label>
+              <input type="text" class="form-control form-control-lg" id="titolo"
+                placeholder="Inserisci il titolo del libro">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="genere" class="col-form-label col-form-label-lg">Genere</label>
+              <select id="genere" class="form-select form-select-lg">
+                <option value="">Scegli il genere</option>
+                <option value="fantasy">fantasy</option>
+                <option value="romanzi">romanzi</option>
+                <option value="horror">horror</option>
+                <option value="storico">storico</option>
+                <option value="distopici">distopici</option>
             </div>
           </div>
         </div>
