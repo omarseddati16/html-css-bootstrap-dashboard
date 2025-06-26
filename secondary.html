@@ -42,10 +42,6 @@
               <a class="nav-link active" aria-current="page" href="#">help</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
-            <button class="btn btn-outline-light" type="submit">Cerca</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -54,11 +50,11 @@
   <!-- main -->
   <main>
     <div class="container">
-      <h1>Nuovo libro</h1>
+      <h1 class="mt-4">Nuovo libro</h1>
       <form>
-        <div class="row">
+        <div class="row mt-4">
           <!-- nome autore -->
-          <div class="col-6">
+          <div class="col-6 ">
             <div class="mb-3">
               <label for="nome" class="col-form-label col-form-label-lg">Nome Autore</label>
               <input type="text" class="form-control form-control-lg" id="nome"
@@ -108,14 +104,30 @@
           <!-- anno fine -->
           <!-- codice libro -->
           <div class="col-12">
-            <div class="mb-3">
-              <label for="Anno" class="col-form-label col-form-label-lg">ISBN#</label>
-              <input type="text" class="form-control form-control-lg" id="Anno" placeholder="Inserisci il codice ISBN#">
+            <div class="mb-5">
+              <label for="isbn" class="col-form-label col-form-label-lg">ISBN#</label>
+              <input type="text" class="form-control form-control-lg" id="isbn" placeholder="Inserisci il codice ISBN#">
             </div>
           </div>
           <!-- codice libro fine -->
-          <hr class="">
-        </div>
+          <hr>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="note" class="col-form-label col-form-label-lg">Note</label>
+              <textarea class="form-control form-control-lg" placeholder="Inserisci eventuali note sul libro"
+                id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+          </div>
+          <div class="col-12 mt-2">
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                <label class="form-check-label" for="autoSizingCheck2">
+                  Disponibile anche in digitale
+                </label>
+              </div>
+            </div>
+            <a href="index.html"><button type="button" class="btn btn-primary">Aggiungi libro</button></a>
       </form>
     </div>
   </main>
